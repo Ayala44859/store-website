@@ -43,18 +43,18 @@ const ProductDetails = () => {
                 top: "50%",
                 left: "50%",
                 transform: "translate(-50%, -50%)",
-                width: { xs: "90%", sm: "80%", md: "70%" }, // הגדלת רוחב המודל
-                maxWidth: "800px", // הגדלת רוחב מקסימלי
+                width: { xs: "90%", sm: "80%", md: "70%" },
+                maxWidth: "800px", 
                 bgcolor: "background.paper",
-                boxShadow: 10, // צל קל יותר
+                boxShadow: 10, 
                 p: 4,
-                borderRadius: "16px", // פינות מעוגלות יותר
+                borderRadius: "16px", 
                 fontSize: "14px",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                border: '1px solid #e0e0e0', // גבול דק
-                gap: 3, // יותר רווח
+                border: '1px solid #e0e0e0',
+                gap: 3, 
             }}>
                 {loading ? (
                     <Box sx={{ width: '100%' }}>
@@ -62,7 +62,6 @@ const ProductDetails = () => {
                     </Box>
                 ) : (
                     <Grid container spacing={3} alignItems="center">
-                        {/* טקסט */}
                         <Grid item xs={12} md={6} textAlign="left">
                             <Typography variant="h5" component="h2" sx={{ fontWeight: 700, marginBottom: 2, letterSpacing: '0.5px' }}>
                                 {productDetails?.productName}
@@ -94,15 +93,14 @@ const ProductDetails = () => {
                                 src={`http://localhost:5500/api/images/${productDetails?.img}`}
                                 alt={productDetails?.productName}
                                 style={{
-                                    maxWidth: "100%", // תמונה ממלאה את הרוחב של הגריד
-                                    maxHeight: "350px", // הגבלת גובה תמונה
+                                    maxWidth: "100%",
+                                    maxHeight: "350px",
                                     objectFit: "contain",
                                     borderRadius: '12px',
                                     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
                                 }}
                             />
                         </Grid>
-                        {/* כפתור סגירה */}
                         <IconButton
                             onClick={() => navigate("/ProductList")}
                             sx={{

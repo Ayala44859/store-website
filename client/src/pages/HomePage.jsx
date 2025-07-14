@@ -95,10 +95,10 @@ const HomeScreen = () => {
                 src={imgSrc}
                 alt={`Slide ${index + 1}`}
                 style={{
-                  width: '100%',         // *** תיקון: תמונה תופסת 100% מרוחב הסלייד
-                  height: 'auto',        // *** תיקון: גובה אוטומטי לשמירה על יחס תמונה
-                  maxHeight: '400px',    // הגבלת גובה מקסימלי
-                  objectFit: 'contain',  // *** תיקון: מציג את כל התמונה בלי לחתוך
+                  width: '100%',
+                  height: 'auto',
+                  maxHeight: '400px',
+                  objectFit: 'contain',
                   display: 'block',
                   margin: '0 auto'
                 }}

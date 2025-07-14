@@ -58,7 +58,6 @@ const CheckOut = () => {
             פרטי ההזמנה
           </Typography>
           <form onSubmit={handleSubmit(save)}>
-            {/* שם משתמש (לא חובה בשרת) */}
             <TextField
               fullWidth
               label="שם משתמש"
@@ -66,7 +65,6 @@ const CheckOut = () => {
               {...register("userName")}
             />
 
-            {/* תאריך שליחה - חובה לפי נוד */}
             <TextField
               fullWidth
               label="תאריך שליחה"
@@ -78,7 +76,6 @@ const CheckOut = () => {
               helperText={errors.targetDate?.message}
             />
 
-            {/* כפתור שליחה */}
             <Button
               type="submit"
               variant="contained"

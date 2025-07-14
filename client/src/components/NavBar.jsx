@@ -4,7 +4,7 @@ import { AppBar, Toolbar, Button, Typography, IconButton, Badge, Box } from '@mu
 import ShoppingCart from '@mui/icons-material/ShoppingCart';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import logo4 from '../assets/images/logo4.png';
+import logo from '../assets/images/logo.png';
 
 import { userOut } from "../features/userSlice";
 
@@ -54,7 +54,7 @@ const NavBar = () => {
                     <Link to={`./HomeScreen`}>
                         <img
                             // src="https://dealcoupon.co.il/storage/medialibrary/520/shufersal-online-logo.png"
-                            src={logo4}
+                            src={logo}
                             alt="Shufersal Logo"
                             style={{ height: 60, marginRight: '20px',width: 100, marginLeft:10 }}
                         />

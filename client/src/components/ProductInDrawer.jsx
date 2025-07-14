@@ -56,13 +56,12 @@ const ProductInDrawer = ({ product }) => {
                         <RemoveIcon />
                     </IconButton>
 
-                    {/* הצגת ה-tooltip ליד המספר */}
                     <Tooltip
                         title="כמות מינימלית בקניה היא 1 יחידה!"
                         open={tooltipOpen}
                         placement="top"
                         arrow
-                        classes={{ tooltip: 'MuiTooltip-tooltip', arrow: 'MuiTooltip-arrow' }} // החלת מחלקות מותאמות אישית
+                        classes={{ tooltip: 'MuiTooltip-tooltip', arrow: 'MuiTooltip-arrow' }}
                     >
                         <span className="quantity">{qty}</span>
                     </Tooltip>

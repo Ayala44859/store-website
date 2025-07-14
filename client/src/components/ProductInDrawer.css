@@ -47,6 +47,7 @@
     height: 100%;
     object-fit: cover;
 }
+
 .quantity-container {
     display: flex;
     align-items: center;
@@ -60,16 +61,14 @@
 }
 
 .MuiTooltip-tooltip {
-    background-color: white !important; /* שינוי צבע הרקע לאדום */
-    color: red !important; /* שינוי צבע הטקסט ללבן */
-    border: 1px solid red !important; /* הוספת מסגרת אדומה */
-    font-size: 12px !important; /* שינוי גודל הגופן אם נדרש */
-    padding: 6px !important; /* ריווח פנימי להודעה */
+    background-color: white !important;
+    color: red !important;
+    border: 1px solid red !important;
+    font-size: 12px !important;
+    padding: 6px !important;
     border-radius: 10px;
 }
 
 .MuiTooltip-arrow {
-    color: red !important; /* שינוי צבע החץ לאדום */
+    color: red !important;
 }
-
-

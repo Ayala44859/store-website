@@ -3,7 +3,7 @@ import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useForm } from 'react-hook-form';
 import { Card, CardContent, CardMedia, Typography, Button, Box, TextField, Container } from '@mui/material';
-import { updatProduct } from '../api/productService'; // וודא שהייבוא נכון
+import { updatProduct } from '../api/productService'; 
 
 const EditProduct = () => {
     const { id } = useParams();
@@ -32,7 +32,6 @@ const EditProduct = () => {
         try {
             await updatProduct(product._id, updatedProduct, currentUser.token);
             alert('המוצר עודכן בהצלחה!');
-            // navigate('/ProductForManager');
             navigate('/ProductForManager', { replace: true });
 
         } catch (error) {

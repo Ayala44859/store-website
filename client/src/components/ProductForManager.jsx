@@ -31,9 +31,9 @@ const ProductForManager = ({ product,onDelete }) => {
                     height: "50%",
                     objectFit: "contain",
                     width: "50%",
-                    display: "flex", // הוסף את השורה הזו
-                    justifyContent: "center", // הוסף את השורה הזו
-                    alignItems: "center", // הוסף את השורה הזו
+                    display: "flex", 
+                    justifyContent: "center", 
+                    alignItems: "center", 
                 }}
                 image={`http://localhost:5500/api/images/${product.img}`}
                 alt={product.productName}

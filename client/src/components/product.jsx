@@ -40,17 +40,16 @@ const Product = ({ product }) => {
     return (
 
         <Card sx={{
-            // minWidth: "300px",
             height: 400,
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-between',
-            transition: "border 0.3s ease-in-out, box-shadow 0.3s ease-in-out", // אנימציה חלקה
-            border: "2px solid transparent", // מסגרת שקופה כברירת מחדל
+            transition: "border 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
+            border: "2px solid transparent",
             "&:hover": {
-                border: "2px solid #1976d2", // מסגרת כחולה בעת מעבר עכבר
-                borderRadius: "8px", // עיגול פינות קל
-                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)" // צל עדין להבלטה
+                border: "2px solid #1976d2",
+                borderRadius: "8px",
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)"
             }
         }}>
             <CardMedia
@@ -59,9 +58,9 @@ const Product = ({ product }) => {
                     height: "50%",
                     objectFit: "contain",
                     width: "50%",
-                    display: "flex", // הוסף את השורה הזו
-                    justifyContent: "center", // הוסף את השורה הזו
-                    alignItems: "center", // הוסף את השורה הזו
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
                 }}
                 image={`http://localhost:5500/api/images/${product.img}`}
                 alt={product.productName}
@@ -76,7 +75,6 @@ const Product = ({ product }) => {
                     {product.description}
                 </Typography>
             </CardContent>
-            {/* כפתורים ממוקמים בתחתית */}
             <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: 2 }}>
                 <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <Button
