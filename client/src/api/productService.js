@@ -2,7 +2,12 @@ import axios from "axios";
 
 //ייבוא מוצרים מהשרת
 // const productUrl="https://store-1-dmhc.onrender.com/api/product";
-const productUrl = "http://localhost:5500/api/product";
+// const productUrl = "http://localhost:5500/api/product";
+
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5500";
+
+const productUrl = `${API_BASE_URL}/api/product`;
+
 
 // שליפת כל המוצרים
 export const getAllProducts = (category, numPage) => {
