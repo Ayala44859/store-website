@@ -15,7 +15,8 @@ connectToDb();
 const app = express();
 
 // הגדרת CORS
-app.use(cors());
+// app.use(cors());
+app.use(cors({ origin: 'https://shop-online-super-byta.netlify.app' }));
 app.use(express.json());
 // app.use("/api/images",express.static("staticFile/images"));
 
