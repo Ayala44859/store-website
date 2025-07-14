@@ -73,9 +73,11 @@ const ProductCartList = () => {
               src={cart}
               alt="סל הקניות ריק"
               style={{
-                height: "100%",
-                objectFit: "contain",
+                // height: "80%",
+                height: 300,
                 width: "100%",
+                objectFit: "contain",
+                // width: "100%",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",

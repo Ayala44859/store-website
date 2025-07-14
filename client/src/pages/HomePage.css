@@ -1,39 +1,34 @@
+/* HomePage.css */
+
+/* --- עיצוב כללי לכותרת (אם נדרש) --- */
 #imgCaption {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 16px;
-    margin-right: 0px;
-    /* margin-top: 10px; */
-
-}
-
-#caption {
-    margin-top: 90px;
-    margin-left: 250px;
-    height: 105px;
-    
-}
-#caption h4 {
-    min-width: 400px;
-    text-align: right;
-    font-size: 36px;
-    margin-right: 8px;
-}
-
-#slide {
-    margin-top: 50px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 #homePageImg {
-    height: 250px;
-    width: 480px;
+  max-width: 100%;
+  height: auto;
 }
-#space{
-    border: solid 3.5px #eb2025;
-    border-radius: 5px;
-    height: 100px;
-    margin-top: 90px;
+
+
+/* --- התאמות ל-Swiper --- */
+
+/* שינוי צבע ברירת המחדל של Swiper לכחול של MUI */
+.home-swiper-container {
+    /* הגדרת משתנה CSS לצבע הניווט */
+    --swiper-navigation-color: #1976d2; 
+    --swiper-pagination-color: #1976d2;
 }
-#startShopping{
-    font-size: 25px;
+
+/* אופציונלי: הגדלת החיצים אם הם קטנים מדי */
+.swiper-button-next,
+.swiper-button-prev {
+    /* גודל החיצים */
+    /* --swiper-navigation-size: 30px; */ 
+}
+
+/* אופציונלי: הזזת הנקודות מעט למעלה אם הן נמוכות מדי */
+.swiper-pagination-bullets {
+    /* bottom: 10px !important; */
 }
