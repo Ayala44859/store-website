@@ -1,0 +1,38 @@
+# תלויות - Dependencies
+# התעלם מתיקיות התלויות בכל הפרויקט
+node_modules/
+
+# קבצי סביבה - Environment Variables
+# קבצים אלו מכילים מידע רגיש ואסור להעלות אותם
+.env
+.env.*
+*.local
+
+# קבצי Build והפצה
+# תוצרי הבנייה של ה-Frontend וה-Backend
+dist/
+dist-ssr/
+build/
+
+# קבצי לוג - Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# קבצי מערכת הפעלה ועורכי קוד - Editor & OS files
+.DS_Store
+Thumbs.db
+
+.idea/
+.vscode/
+# השורה הבאה מאפשרת לשתף הגדרות של תוספים מומלצים ב-VSCode
+!/.vscode/extensions.json
+
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
