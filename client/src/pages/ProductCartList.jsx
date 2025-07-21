@@ -111,8 +111,8 @@ const ProductCartList = () => {
                       <Box display="flex" flexDirection="row" alignItems="center">
                         <img src={item.img}
                           alt={item.name} 
-                          width={80} 
-                          height={80} />
+                          width={70} 
+                          height={70} />
                         <Box ml={1} textAlign="center">
                           <Typography variant="body1" fontWeight="bold">
                             {item.name}
