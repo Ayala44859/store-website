@@ -1,6 +1,14 @@
 import { productModel } from "../Model/product_resource.js";
 import { check, checkManager } from "../Middlewares/check.js";
+import { v2 as cloudinary } from 'cloudinary';
 import uploadImage from '../Middlewares/uploadImage.js'
+
+cloudinary.config({
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET
+});
+
 
 // שליפת כל המוצרים
 export async function getAllProducts(req, res) {
