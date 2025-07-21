@@ -28,9 +28,9 @@ const ProductForManager = ({ product, onDelete }) => {
             <CardMedia
                 component="img"
                 sx={{
-                    height: "200px",
-                    width: "50%",
+                    height: "50%",
                     objectFit: "contain",
+                    width: "50%",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
