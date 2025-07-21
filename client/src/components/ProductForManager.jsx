@@ -28,12 +28,12 @@ const ProductForManager = ({ product, onDelete }) => {
             <CardMedia
                 component="img"
                 sx={{
-                    height: "200px%",
+                    height: "200px",
                     width: "50%",
                     objectFit: "contain",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
+                    // display: "flex",
+                    // justifyContent: "center",
+                    // alignItems: "center",
                 }}
                 image={product.img}
                 alt={product.productName}
