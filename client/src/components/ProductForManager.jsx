@@ -29,6 +29,8 @@ const ProductForManager = ({ product, onDelete }) => {
                 component="img"
                 sx={{
                     height: "50%",
+                    paddingLeft: "16px",
+                    paddingRight: "16px",
                     objectFit: "contain",
                     width: "50%",
                     display: "flex",
