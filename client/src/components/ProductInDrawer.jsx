@@ -73,7 +73,8 @@ const ProductInDrawer = ({ product }) => {
             </div>
             <div className="product-image">
                 <img
-                    src={`http://localhost:5500/api/images/${product.img}`}
+                    // src={`http://localhost:5500/api/images/${product.img}`}
+                    image={product.img}
                     alt={product.productName}
                     style={{ width: "70px", height: "70px", objectFit: "contain" }}
                 />

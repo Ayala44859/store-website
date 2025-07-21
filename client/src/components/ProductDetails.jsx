@@ -44,17 +44,17 @@ const ProductDetails = () => {
                 left: "50%",
                 transform: "translate(-50%, -50%)",
                 width: { xs: "90%", sm: "80%", md: "70%" },
-                maxWidth: "800px", 
+                maxWidth: "800px",
                 bgcolor: "background.paper",
-                boxShadow: 10, 
+                boxShadow: 10,
                 p: 4,
-                borderRadius: "16px", 
+                borderRadius: "16px",
                 fontSize: "14px",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
                 border: '1px solid #e0e0e0',
-                gap: 3, 
+                gap: 3,
             }}>
                 {loading ? (
                     <Box sx={{ width: '100%' }}>
@@ -90,7 +90,8 @@ const ProductDetails = () => {
                         {/* תמונה */}
                         <Grid item xs={12} md={6} textAlign="right">
                             <img
-                                src={`http://localhost:5500/api/images/${productDetails?.img}`}
+                                // src={`http://localhost:5500/api/images/${productDetails?.img}`}
+                                image={product.img}
                                 alt={productDetails?.productName}
                                 style={{
                                     maxWidth: "100%",

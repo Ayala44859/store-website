@@ -62,7 +62,7 @@ const Product = ({ product }) => {
                     justifyContent: "center",
                     alignItems: "center",
                 }}
-                image={`http://localhost:5500/api/images/${product.img}`}
+                image={product.img}
                 alt={product.productName}
             />
             <CardContent sx={{ flex: 1 }}>

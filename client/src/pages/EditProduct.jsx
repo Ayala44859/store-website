@@ -3,7 +3,7 @@ import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useForm } from 'react-hook-form';
 import { Card, CardContent, CardMedia, Typography, Button, Box, TextField, Container } from '@mui/material';
-import { updatProduct } from '../api/productService'; 
+import { updatProduct } from '../api/productService';
 
 const EditProduct = () => {
     const { id } = useParams();
@@ -55,7 +55,8 @@ const EditProduct = () => {
                     <Card sx={{ maxWidth: 400 }}>
                         <CardMedia>
                             <img
-                                src={`http://localhost:5500/api/images/${product?.img}`}
+                                // src={`http://localhost:5500/api/images/${product?.img}`}
+                                image={product.img}
                                 alt={product?.productName}
                                 style={{
                                     width: "100%",
@@ -85,9 +86,9 @@ const EditProduct = () => {
                             <TextField label="קטגוריות (מופרדות בפסיקים)" {...register('categories')} fullWidth margin="normal" />
 
                             {/* כפתור ממורכז */}
-                                <Button type="submit" variant="contained" color="primary" sx={{ width: '100%' }}>
-                                    עדכן מוצר
-                                </Button>
+                            <Button type="submit" variant="contained" color="primary" sx={{ width: '100%' }}>
+                                עדכן מוצר
+                            </Button>
                         </form>
                     </Box>
                 </Box>
