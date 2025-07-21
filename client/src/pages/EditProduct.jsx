@@ -56,7 +56,7 @@ const EditProduct = () => {
                         <CardMedia>
                             <img
                                 // src={`http://localhost:5500/api/images/${product?.img}`}
-                                image={product.img}
+                                src={product.img}
                                 alt={product?.productName}
                                 style={{
                                     width: "100%",

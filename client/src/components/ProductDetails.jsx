@@ -91,7 +91,7 @@ const ProductDetails = () => {
                         <Grid item xs={12} md={6} textAlign="right">
                             <img
                                 // src={`http://localhost:5500/api/images/${productDetails?.img}`}
-                                image={product.img}
+                                src={product.img}
                                 alt={productDetails?.productName}
                                 style={{
                                     maxWidth: "100%",

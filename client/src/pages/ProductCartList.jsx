@@ -110,7 +110,7 @@ const ProductCartList = () => {
                     <TableCell align="center">
                       <Box display="flex" flexDirection="row" alignItems="center">
                         {/* <img src={`http://localhost:5500/api/images/${item.img}`} alt={item.name} width={80} height={80} /> */}
-                        image={product.img}
+                        src={product.img}
                         <Box ml={1} textAlign="center">
                           <Typography variant="body1" fontWeight="bold">
                             {item.name}
